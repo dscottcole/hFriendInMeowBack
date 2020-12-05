@@ -1,25 +1,31 @@
-# README
+A cat adoption and cat breed information application created with a ReduxJS frontend and Rails backend.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Full App Video: https://youtu.be/nwljO7tNEL4
 
-Things you may want to cover:
+API List:
 
-* Ruby version
+Cat Breeds: https://thecatapi.com/ Cat Breed Images: https://thecatapi.com/ Random Cat Images: https://thecatapi.com/ Adoptable Pets: https://www.petfinder.com/ Adoptable Pet Organizations: https://www.petfinder.com/ Google Maps: https://developers.google.com/maps/documentation/javascript/adding-a-google-map Geocoding API: https://developers.google.com/maps/documentation/geocoding/overview Reverse Geocoding API: https://developers.google.com/maps/documentation/geocoding/overview
 
-* System dependencies
+Frontend:
 
-* Configuration
+[x] Auth [ ] Tests [x] Interacting with a complex API [x] Redux [x] Custom CSS [x] One significant refactor
 
-* Database creation
+Backend:
 
-* Database initialization
+[x] Auth [ ] Tests [ ] Multiple has_many_through relationships [ ] Seeds from a complex data set [x] Custom routes [x] Custom controller/model methods [ ] Basic database query optimizations [ ] Background jobs for slow actions [ ] Sockets or email integration [x] One significant refactor [x] Validation
 
-* How to run the test suite
+DB Tables:
 
-* Services (job queues, cache servers, search engines, etc.)
+/users /cats
 
-* Deployment instructions
+User: { username: string name: string email: string password_digest: text password_confirmation: text }
 
-* ...
-# hFriendInMeowBack
+Cat: { name: string petfinder_id: string user_id: integer }
+
+Client-Side Routes:
+
+/signup /login /profile /breeds /adoptable /favorites
+
+User Stories:
+
+Sign up for an account Log in with your account Edit account info/credentials Get information about all cat breeds See all cat breeds that are available to adopt Search/Filter cats by certain traits See all adoptable cats from your chosen breed See the location/organization of the current cat in your search on a google map Add/remove cats to your favorites Infinite scrolling cat image feed
